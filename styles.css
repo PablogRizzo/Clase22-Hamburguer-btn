@@ -11,24 +11,47 @@ nav{
     height: 20vh;
 }
 
-nav button{
-    margin: 35px;
-    padding: 10px;
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-nav i{
-    font-size: 25px;
+.link-nav{
+    display: flex;
+    list-style: none;
+    gap: 40px;
 }
 
-.content{
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.hamburguesa{
     display: none;
 }
 
-.activo{
-    display: flex;
-    flex-direction: column;
-}
+@media screen and (max-width: 500px) {
+    .hamburguesa{
+        display: block;
+    }
 
-ul{
-    list-style: none;
+    .links{
+        position: absolute;
+    }
+
+    .link-nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        --display: none;
+        display: var(--display);
+    }
+
+    .activa{
+        --display: block;
+    }
 }
