@@ -1,9 +1,7 @@
 var hamburguer = document.querySelector(".hamburguesa");
-var content = document.querySelector(".content");
+var content = document.querySelector(".link-nav");
 var icon = document.querySelector(".fas")
 
 hamburguer.addEventListener("click", (e)=> {
-    console.log("hola");
-    content.classList.toggle("activo");
-    icon.classList.toggle("fa-times")
+    content.classList.toggle("activa");
 });

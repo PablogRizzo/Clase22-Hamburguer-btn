@@ -46,7 +46,7 @@ nav{
         position: absolute;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
         --display: none;
         display: var(--display);
     }
