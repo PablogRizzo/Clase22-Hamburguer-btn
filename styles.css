@@ -42,18 +42,18 @@ nav{
         position: absolute;
         right: 65px;
         top: 100px;
-        height: 70%;
-        background: white;
+        height: 100%;
+        background: coral;
         text-align: center;
+        transform: translateY(-300%);
+        transition: 1s;
     }
 
     .link-nav{
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        --display: none;
-        display: var(--display);
+        gap: 8px;
     }
 
     li{
@@ -61,6 +61,6 @@ nav{
     }
 
     .activa{
-        --display: block;
+        transform: translateY(0%);
     }
 }
