@@ -40,15 +40,24 @@ nav{
 
     .links{
         position: absolute;
+        right: 65px;
+        top: 100px;
+        height: 70%;
+        background: white;
+        text-align: center;
     }
 
     .link-nav{
-        position: absolute;
+        height: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
         --display: none;
         display: var(--display);
+    }
+
+    li{
+        margin: 5px 0 0 0;
     }
 
     .activa{
